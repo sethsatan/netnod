@@ -1,0 +1,3 @@
+nod_core_homepage:
+    path:     /
+    defaults: { _controller: NodCoreBundle:Default:index }
