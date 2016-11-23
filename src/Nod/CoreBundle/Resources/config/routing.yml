@@ -1,3 +1,6 @@
 nod_core_homepage:
     path:     /
     defaults: { _controller: NodCoreBundle:Default:index }
+nod_core_access:
+    path:     /access
+    defaults: { _controller: NodCoreBundle:Default:access }

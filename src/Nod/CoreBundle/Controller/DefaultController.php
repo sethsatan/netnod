@@ -10,4 +10,8 @@ class DefaultController extends Controller
     {
         return $this->render('NodCoreBundle:Default:index.html.twig');
     }
+    public function accessAction()
+    {
+        return $this->render('NodCoreBundle:Default:access.html.twig');
+    }
 }
