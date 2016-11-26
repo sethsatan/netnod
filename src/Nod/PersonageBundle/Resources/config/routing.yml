@@ -1,0 +1,3 @@
+personage_homepage:
+    path:     /
+    defaults: { _controller: PersonageBundle:Default:index }
