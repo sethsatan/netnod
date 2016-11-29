@@ -1,6 +1,6 @@
 <?php
 
-namespace PersonageBundle\Controller;
+namespace Nod\PersonnageBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -8,6 +8,6 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('PersonageBundle:Default:index.html.twig');
+        return $this->render('NodPersonnageBundle:Default:index.html.twig');
     }
 }

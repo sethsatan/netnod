@@ -1,4 +1,4 @@
 services:
-#    nod_core.example:
-#        class: Nod\CoreBundle\Example
+#    nod_personnage.example:
+#        class: Nod\PersonnageBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]

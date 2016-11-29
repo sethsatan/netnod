@@ -1,3 +1,0 @@
-equipement_homepage:
-    path:     /
-    defaults: { _controller: EquipementBundle:Default:index }

@@ -1,3 +1,0 @@
-metier_homepage:
-    path:     /
-    defaults: { _controller: MetierBundle:Default:index }

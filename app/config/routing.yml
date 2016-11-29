@@ -1,15 +1,5 @@
-equipement:
-    resource: "@NodEquipementBundle/Resources/config/routing.yml"
+nod_personnage:
+    resource: "@NodPersonnageBundle/Resources/config/routing.yml"
     prefix:   /
 
-metier:
-    resource: "@NodMetierBundle/Resources/config/routing.yml"
-    prefix:   /
 
-personage:
-    resource: "@NodPersonageBundle/Resources/config/routing.yml"
-    prefix:   /
-
-nod_core:
-    resource: "@NodCoreBundle/Resources/config/routing.yml"
-    prefix:   /
