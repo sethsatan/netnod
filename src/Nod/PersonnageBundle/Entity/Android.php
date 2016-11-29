@@ -1,24 +1,12 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 namespace Nod\PersonageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Description of Androide
- *
- * @author dev
- *  
- */
-
-/**
  * @ORM\Entity
- * @ORM\Table(name="product")
+ * @ORM\Table(name="Android")
  */
 class Android {
     
