@@ -1,5 +1,10 @@
+nod_user:
+    resource: "@NodUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 nod_personnage:
     resource: "@NodPersonnageBundle/Resources/config/routing.yml"
     prefix:   /
 
-
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"

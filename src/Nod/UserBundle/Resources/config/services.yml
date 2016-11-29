@@ -1,0 +1,4 @@
+services:
+#    nod_user.example:
+#        class: Nod\UserBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
