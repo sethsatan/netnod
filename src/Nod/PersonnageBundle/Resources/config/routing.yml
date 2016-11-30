@@ -1,3 +1,0 @@
-nod_personnage_homepage:
-    path:     /
-    defaults: { _controller: NodPersonnageBundle:Default:index }

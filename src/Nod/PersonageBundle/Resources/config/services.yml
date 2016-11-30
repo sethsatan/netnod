@@ -1,4 +1,4 @@
 services:
-#    nod_personnage.example:
-#        class: Nod\PersonnageBundle\Example
+#    nod_personage.example:
+#        class: Nod\PersonageBundle\Example
 #        arguments: ["@service_id", "plain_value", "%parameter%"]
