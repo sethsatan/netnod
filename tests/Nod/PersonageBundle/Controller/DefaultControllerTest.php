@@ -1,6 +1,6 @@
 <?php
 
-namespace Nod\PersonageBundle\Tests\Controller;
+namespace Nod\CharacterBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

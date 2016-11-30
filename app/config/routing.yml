@@ -2,8 +2,8 @@ nod_user:
     resource: "@NodUserBundle/Resources/config/routing.yml"
     prefix:   /
 
-nod_personage:
-    resource: "@NodPersonageBundle/Resources/config/routing.yml"
+nod_Character:
+    resource: "@NodCharacterBundle/Resources/config/routing.yml"
     prefix:   /
 
 fos_user:

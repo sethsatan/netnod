@@ -1,0 +1,3 @@
+nod_Character_homepage:
+    path:     /
+    defaults: { _controller: NodCharacterBundle:Default:index }

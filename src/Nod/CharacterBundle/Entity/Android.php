@@ -1,6 +1,6 @@
 <?php
 
-namespace Nod\PersonageBundle\Entity;
+namespace Nod\CharacterBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -39,6 +39,8 @@ class Android {
      * @ORM\Column(type="integer")
      */
     protected $money;
+    
+    
     
     
     
