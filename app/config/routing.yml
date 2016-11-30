@@ -1,3 +1,7 @@
+nod_corporate:
+    resource: "@NodCorporateBundle/Resources/config/routing.yml"
+    prefix:   /
+
 nod_user:
     resource: "@NodUserBundle/Resources/config/routing.yml"
     prefix:   /

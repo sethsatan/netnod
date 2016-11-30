@@ -1,0 +1,3 @@
+nod_corporate_homepage:
+    path:     /
+    defaults: { _controller: NodCorporateBundle:Default:index }
