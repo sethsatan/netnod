@@ -25,4 +25,12 @@ class User extends BaseUser
      * @ORM\JoinColumn(name="android", referencedColumnName="id")
     */
     protected $android;
+    
+    
+    
+     public function __construct()
+    {
+        parent::__construct();
+        // your own logic
+    }
 }

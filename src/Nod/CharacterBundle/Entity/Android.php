@@ -40,6 +40,14 @@ class Android {
      */
     protected $money;
     
+    #/**
+    # * (One-To-One)
+    # * @ORM\OneToOne(targetEntity="Nod\CharacterBundle\Entity\Android")
+    # * @ORM\JoinColumn(name="work", referencedColumnName="id")
+    # */
+    protected $work;
+    
+    
     
     
     
