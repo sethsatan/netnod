@@ -22,7 +22,7 @@ class User extends BaseUser
     /**
      * (One-To-One)
      * @ORM\OneToOne(targetEntity="Nod\CharacterBundle\Entity\Android")
-     * @ORM\JoinColumn(name="android", referencedColumnName="id")
+     * @ORM\JoinColumn(name="android_id", referencedColumnName="id")
     */
     protected $android;
     
@@ -32,5 +32,39 @@ class User extends BaseUser
     {
         parent::__construct();
         // your own logic
+    }
+    
+    /**
+     * Get id.
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+    
+    /**
+     * Set android.
+     *
+     * @param \Nod\CharacterBundle\Entity\Android
+     *
+     * @return User
+     */
+    public function setAndroid(\Nod\CharacterBundle\Entity\Android $android=null)
+    {
+        $this->android = $android;
+
+        return $this;
+    }
+
+    /**
+     * Get android.
+     *
+     * @return \Nod\CharacterBundle\Entity\Android
+     */
+    public function getAndroid()
+    {
+        return $this->android;
     }
 }
