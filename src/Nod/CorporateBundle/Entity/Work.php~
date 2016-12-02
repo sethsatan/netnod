@@ -1,0 +1,43 @@
+<?php
+
+namespace Nod\CorporateBundle\Entity;
+
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="Work")
+ */
+class Work {
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+    
+    /**
+     * @ORM\Column(type="string")
+     */
+    
+    protected $name;
+    
+    /**
+     * @ORM\Column(type="text")
+     */
+    
+    protected $description;
+    
+    /**
+     * @ORM\Column(type="string")
+     */
+    
+    protected $salary;
+    
+    /**
+     * (Many-To-One)
+     * @ORM\ManyToOne(targetEntity="Nod\CoporateBundle\Entity\Corporate", inversedBy="works")
+     * @ORM\JoinColumn(name="corporate_id", referencedColumnName="id")
+     */
+    protected $corporate;
+}

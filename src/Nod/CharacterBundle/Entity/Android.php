@@ -36,15 +36,15 @@ class Android {
     protected $humanity;
     
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string")
      */
     protected $money;
     
-    #/**
-    # * (One-To-One)
-    # * @ORM\OneToOne(targetEntity="Nod\CharacterBundle\Entity\Android")
-    # * @ORM\JoinColumn(name="work", referencedColumnName="id")
-    # */
+    /**
+     * (Many-To-One)
+     * @ORM\ManyToOne(targetEntity="Nod\CoporateBundle\Entity\Work", inversedBy="androids")
+     * @ORM\JoinColumn(name="work_id", referencedColumnName="id")
+     */
     protected $work;
     
     /**
