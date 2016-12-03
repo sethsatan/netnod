@@ -42,7 +42,7 @@ class Android {
     
     /**
      * (Many-To-One)
-     * @ORM\ManyToOne(targetEntity="Nod\CoporateBundle\Entity\Work", inversedBy="androids")
+     * @ORM\ManyToOne(targetEntity="Nod\CorporateBundle\Entity\Work", inversedBy="androids")
      * @ORM\JoinColumn(name="work_id", referencedColumnName="id")
      */
     protected $work;

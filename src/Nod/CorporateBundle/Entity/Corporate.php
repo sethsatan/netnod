@@ -37,7 +37,7 @@ class Corporate {
     /**
      * $works.
      *
-     * @ORM\OneToMany(targetEntity="Soraya\PatientBundle\Entity\Work", mappedBy="corporate")
+     * @ORM\OneToMany(targetEntity="Nod\CorporateBundle\Entity\Work", mappedBy="corporate")
      */
     protected $works;
 

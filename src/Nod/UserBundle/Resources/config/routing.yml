@@ -1,3 +1,4 @@
-nod_user_homepage:
-    path:     /
+nod_user_page:
+    path:     /user
     defaults: { _controller: NodUserBundle:Default:index }
+    

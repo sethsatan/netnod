@@ -6,9 +6,13 @@ nod_user:
     resource: "@NodUserBundle/Resources/config/routing.yml"
     prefix:   /
 
-nod_Character:
+nod_character:
     resource: "@NodCharacterBundle/Resources/config/routing.yml"
     prefix:   /
 
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+app:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /

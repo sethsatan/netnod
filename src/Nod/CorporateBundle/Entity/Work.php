@@ -44,7 +44,7 @@ class Work {
     /**
      * $androids.
      *
-     * @ORM\OneToMany(targetEntity="Soraya\PatientBundle\Entity\Android", mappedBy="work")
+     * @ORM\OneToMany(targetEntity="Nod\AndroidBundle\Entity\Android", mappedBy="work")
      */
     protected $androids;
 
