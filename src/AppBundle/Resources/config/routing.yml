@@ -5,3 +5,7 @@ index:
 test: 
     path:   /test
     defaults: { _controller: AppBundle:Default:test }
+    
+connect: 
+    path:   /c
+    defaults: { _controller: AppBundle:Default:test }
