@@ -36,7 +36,7 @@ class Work {
     
     /**
      * (Many-To-One)
-     * @ORM\ManyToOne(targetEntity="Nod\CoporateBundle\Entity\Corporate", inversedBy="works")
+     * @ORM\ManyToOne(targetEntity="Nod\CorporateBundle\Entity\Corporate", inversedBy="works")
      * @ORM\JoinColumn(name="corporate_id", referencedColumnName="id")
      */
     protected $corporate;
@@ -44,7 +44,7 @@ class Work {
     /**
      * $androids.
      *
-     * @ORM\OneToMany(targetEntity="Nod\AndroidBundle\Entity\Android", mappedBy="work")
+     * @ORM\OneToMany(targetEntity="Nod\CharacterBundle\Entity\Android", mappedBy="work")
      */
     protected $androids;
 
