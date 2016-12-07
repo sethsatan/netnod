@@ -1,1 +1,5 @@
-{{ render(controller('FOSUserBundle:Security:login')) }}
+{% if is_granted('ROLE_USER') %} 
+    !!!!!HELLO!!!!!
+{% else %}
+    {{ render(controller('FOSUserBundle:Security:login')) }}
+{% endif %}
