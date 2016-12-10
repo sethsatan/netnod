@@ -2,3 +2,9 @@
     display: inline;
 }
 
+.login-navbar{
+    position: absolute;
+    right: 0px;
+    margin-top: 10px;
+    color: #9d9d9d;
+}
