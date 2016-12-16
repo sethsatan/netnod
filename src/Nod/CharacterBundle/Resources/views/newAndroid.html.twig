@@ -1,4 +1,10 @@
-{% extends 'base.html.twig' %}
+{% extends 'nod/index.html.twig' %}
 
 {% block body %}
-{% endblock %}    
+    
+ 
+     {{ form(form, {'method': 'GET'}) }}
+ 
+   
+{% endblock %}
+{% block nav %}{% endblock %}
