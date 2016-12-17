@@ -17,15 +17,16 @@ class DefaultController extends Controller
         if ($this->get('security.authorization_checker')->isGranted('ROLE_USER')){
         $user = $this->getUser();
             if($user->getAndroid()==NULL |$user->getAndroid()=="") {
-                $response = $this->forward('NodCharacterBundle:Android:new');
+                $response = $this->redirect( $this->generateUrl('nod_Character_newandroid'));
                 return $response;                
             }
+            return $this->redirect( $this->generateUrl('nod_Character_android'));
         }
         return $this->render('nod/index.html.twig');
     }
     public function testAction(Request $request)
     {
-        // replace this example code with whatever you need
+        
         return $this->render('default/test.html.twig');
     }
     

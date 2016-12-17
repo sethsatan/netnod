@@ -1,3 +1,6 @@
-nod_Character_page:
-    path:     /character
-    defaults: { _controller: NodCharacterBundle:Default:index }
+nod_Character_android:
+    path:     /android
+    defaults: { _controller: NodCharacterBundle:Android:index }
+nod_Character_newandroid:
+    path:     /newandroid
+    defaults: { _controller: NodCharacterBundle:Android:new }

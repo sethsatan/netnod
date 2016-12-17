@@ -5,8 +5,9 @@ namespace Nod\CharacterBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity
+ * @ORM\Entity(repositoryClass="Nod\UserBundle\Entity\User")
  * @ORM\Table(name="Android")
+ * 
  */
 class Android {
     
