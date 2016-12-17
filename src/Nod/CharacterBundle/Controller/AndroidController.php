@@ -43,10 +43,17 @@ class AndroidController extends Controller
     
     public function indexAction(){
         if ($this->get('security.authorization_checker')->isGranted('ROLE_USER')){
-            $user = $this->getUser();
-            $name = $user->getAndroid()->getName();
+            $android = $this->getUser()->getAndroid();
+            $name = $android->getName();
+            $humanity = $android->getHumanity();
+            $money = $android->getMoney();
+            $description = $android->getDescription();
+            
             return $this->render('NodCharacterBundle::android.html.twig', array(
                 'name'=>$name,
+                'humanity'=>$humanity,
+                'money'=>$money,
+                'description'=>$description,
             ));
         }
         
