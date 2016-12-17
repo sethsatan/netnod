@@ -21,7 +21,7 @@ class User extends BaseUser
     
     /**
      * (One-To-One)
-     * @ORM\OneToOne(targetEntity="Nod\CharacterBundle\Entity\Android")
+     * @ORM\OneToOne(targetEntity="Nod\CharacterBundle\Entity\Android", mappedBy="id")
      * @ORM\JoinColumn(name="android_id", referencedColumnName="id")
     */
     protected $android;

@@ -27,8 +27,7 @@ class AndroidController extends Controller
         
         if ($form->isSubmitted() && $form->isValid()) {
             $em->persist($android);
-            $user->setAndroid($android->getId());
-            $em->persist($user);
+            $user->setAndroid($android);
             $em->flush();
             
         return $this->redirect( $this->generateUrl('nod_Character_android'));
@@ -46,7 +45,7 @@ class AndroidController extends Controller
         if ($this->get('security.authorization_checker')->isGranted('ROLE_USER')){
             $user = $this->getUser();
             $name = $user->getAndroid()->getName();
-            return $this->render('NodCharacterBundle::newAndroid.html.twig', array(
+            return $this->render('NodCharacterBundle::android.html.twig', array(
                 'name'=>$name,
             ));
         }
