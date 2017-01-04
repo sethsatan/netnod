@@ -30,7 +30,7 @@ class AndroidController extends Controller
             $user->setAndroid($android);
             $em->flush();
             
-        return $this->redirect( $this->generateUrl('nod_Character_android'));
+        return $this->redirect( $this->generateUrl('home'));
         }
         
         return $this->render('NodCharacterBundle::newAndroid.html.twig', array(
@@ -41,21 +41,5 @@ class AndroidController extends Controller
         
     }
     
-    public function indexAction(){
-        if ($this->get('security.authorization_checker')->isGranted('ROLE_USER')){
-            $android = $this->getUser()->getAndroid();
-            $name = $android->getName();
-            $humanity = $android->getHumanity();
-            $money = $android->getMoney();
-            $description = $android->getDescription();
-            
-            return $this->render('NodCharacterBundle::android.html.twig', array(
-                'name'=>$name,
-                'humanity'=>$humanity,
-                'money'=>$money,
-                'description'=>$description,
-            ));
-        }
-        
-    }        
+           
 }

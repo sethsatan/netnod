@@ -9,3 +9,7 @@ test:
 demo: 
     path:   /demo
     defaults: { _controller: AppBundle:Default:demo }
+    
+home:
+    path:     /home
+    defaults: { _controller: AppBundle:Default:home }
