@@ -122,4 +122,45 @@ class Corporate {
     {
         return $this->capital;
     }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->works = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add work
+     *
+     * @param \Nod\CorporateBundle\Entity\Work $work
+     *
+     * @return Corporate
+     */
+    public function addWork(\Nod\CorporateBundle\Entity\Work $work)
+    {
+        $this->works[] = $work;
+
+        return $this;
+    }
+
+    /**
+     * Remove work
+     *
+     * @param \Nod\CorporateBundle\Entity\Work $work
+     */
+    public function removeWork(\Nod\CorporateBundle\Entity\Work $work)
+    {
+        $this->works->removeElement($work);
+    }
+
+    /**
+     * Get works
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getWorks()
+    {
+        return $this->works;
+    }
 }

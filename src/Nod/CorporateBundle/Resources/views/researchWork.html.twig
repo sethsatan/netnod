@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    
+    <div class="col-lg-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">               
+                <div class="panel-title">Pannel d'action</div>
+                <div class="col-lg-3"><button class="pull-right btn btn-default">Créé une entreprise</button></div>
+                <div class="col-lg-3"><button class="pull-right btn btn-default">Créé une offre d'emploie</button></div>            
+            </div>    
+            <div class="panel-body">
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="panel panel-green">
+            <div class="panel-heading">               
+                <div class="panel-title">Offre d'emploie</div>
+                               
+            </div>
+            <div class="panel-body">
+                <div class="container">		
+                    <ul class="list-simple">
+                        
+                    {#    
+                        {% for index, work in works %}
+                        <li>
+                        
+                        </li>
+                        {% else %}
+                        <p>Aucun emploie disponible</p>
+                        {% endfor %}
+                    #}
+                    </ul>
+                </div> 
+            </div>
+        </div>
+    </div>
+        
+{% endblock %}

@@ -153,4 +153,45 @@ class Work {
     {
         return $this->corporate;
     }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->androids = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add android
+     *
+     * @param \Nod\CharacterBundle\Entity\Android $android
+     *
+     * @return Work
+     */
+    public function addAndroid(\Nod\CharacterBundle\Entity\Android $android)
+    {
+        $this->androids[] = $android;
+
+        return $this;
+    }
+
+    /**
+     * Remove android
+     *
+     * @param \Nod\CharacterBundle\Entity\Android $android
+     */
+    public function removeAndroid(\Nod\CharacterBundle\Entity\Android $android)
+    {
+        $this->androids->removeElement($android);
+    }
+
+    /**
+     * Get androids
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getAndroids()
+    {
+        return $this->androids;
+    }
 }
