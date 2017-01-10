@@ -14,7 +14,7 @@ class newAndroidType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name', TextType::class, array('label' => "Nom de l'android  "))
+            ->add('name', TextType::class, array('label' => "Nom de l'android  ",'required'  => true))
             ->add('save', SubmitType::class, array('label' => '  Valider  '))
             ->getForm();
     }

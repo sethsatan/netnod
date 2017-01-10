@@ -3,17 +3,17 @@ nod_Corporate_homepage:
     defaults: { _controller: NodCorporateBundle:Corporate:index }
     
 nod_Corporate_new:
-    path:     /newcoporate
+    path:     /newcorporate
     defaults: { _controller: NodCorporateBundle:Corporate:new }
     
 nod_Work_homepage:
     path:     /work
-    defaults: { _controller: NodCorporateBundle:Corporate:index }
+    defaults: { _controller: NodCorporateBundle:Work:index }
     
 nod_Work_new:
     path:     /newwork
-    defaults: { _controller: NodCorporateBundle:Corporate:new }
+    defaults: { _controller: NodCorporateBundle:Work:new }
 
 nod_Work_research:
     path:     /researchwork
-    defaults: { _controller: NodCorporateBundle:Corporate:research }
+    defaults: { _controller: NodCorporateBundle:Work:research }

@@ -154,6 +154,14 @@ class Android {
         return $this->money;
     }
     
-    
+    /**
+     * Get work.
+     *
+     * @return \Nod\CorporateBundle\Entity\Work
+     */
+    public function getWork()
+    {
+        return $this->work;
+    }
 }
 

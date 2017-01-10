@@ -133,11 +133,11 @@ class Work {
     /**
      * Set corporate
      *
-     * @param \Nod\CoporateBundle\Entity\Corporate $corporate
+     * @param \Nod\CorporateBundle\Entity\Corporate $corporate
      *
      * @return Work
      */
-    public function setCorporate(\Nod\CoporateBundle\Entity\Corporate $corporate = null)
+    public function setCorporate(\Nod\CorporateBundle\Entity\Corporate $corporate = null)
     {
         $this->corporate = $corporate;
 
@@ -147,7 +147,7 @@ class Work {
     /**
      * Get corporate
      *
-     * @return \Nod\CoporateBundle\Entity\Corporate
+     * @return \Nod\CorporateBundle\Entity\Corporate
      */
     public function getCorporate()
     {

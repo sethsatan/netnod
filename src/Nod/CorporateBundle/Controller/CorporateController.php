@@ -5,9 +5,9 @@ namespace Nod\CorporateBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Nod\CorporateBundle\Entity\Corporate;
-use Nod\CorporateBundle\Entity\newCorporateType;
+use Nod\CorporateBundle\Form\newCorporateType;
 
-class DefaultController extends Controller
+class CorporateController extends Controller
 {
     /**
      * @Route("/", name="homepage")
@@ -37,18 +37,17 @@ class DefaultController extends Controller
         $corporate->setDescription("");
         
 
-        $form = $this->createForm(newCorporateType::class,corporate);    
+        $form = $this->createForm(newCorporateType::class,$corporate);    
         $form->handleRequest($request);
         
         if ($form->isSubmitted() && $form->isValid()) {
             $em->persist($corporate);
-            $user->setAndroid($corporate);
             $em->flush();
             
-        return $this->redirect( $this->generateUrl('nod_Coporate_work'));
+        return $this->redirect( $this->generateUrl('nod_Corporate_work'));
         }
         
-        return $this->render('NodCorporateBundle::newCoporate.html.twig', array(
+        return $this->render('NodCorporateBundle::newCorporate.html.twig', array(
             'form' => $form->createView(),
         ));
         }}
